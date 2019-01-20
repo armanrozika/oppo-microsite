@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>OPPO | Kompas</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+    </header>
+
+    <section class="ads__phb">
+        <a href="#"> <img id="phb"  src="images/970x250.jpg" alt=""></a>
+    </section>
+
+     <section class="ads__skin">
+        <a href="#"><img src="images/100x550-L.jpg" alt=""></a>
+        <a href="#"><img src="images/100x550-R.jpg" alt=""></a>
+    </section>
+
+    <section class="main">
+        <div class="galeri">
+            <div class="video__title">
+                <h1>Video</h1>
+                <div class="line"></div>
+            </div>
+            <div class="galeri__video">
+                <div class="video__items">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/po4Y7mX8P2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video__thumb"></div>
+                </div>
+                <div class="video__items">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/tzgqGETDsdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="video__thumb"></div>
+                </div>
+                <div class="video__items">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/tzgqGETDsdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="video__thumb"></div>
+                </div>
+                <div class="video__items">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/tzgqGETDsdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="video__thumb"></div>
+                </div>
+                <div class="video__items">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/tzgqGETDsdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="video__thumb"></div>
+                </div>
+                <div class="video__items">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/tzgqGETDsdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="video__thumb"></div>
+                </div>
+            </div>
+            <div class="video__title">
+                <h1>Foto</h1>
+                <div class="line"></div>
+            </div>
+            <div class="galeri__foto">
+                <div class="foto__items">
+                    <img src="https://www.arabianbusiness.com/sites/default/files/images/2017/09/11/Dubai-Skyline-canal.jpg">
+                </div>
+                <div class="foto__items">
+                    <img src="https://cdn.getyourguide.com/niwziy2l9cvz/4DU3b9LViEYI2gcuY4KYwM/d6dd4e4d8a8451a1212ce538888ce1ef/dubai-city-011-1112x630.jpg">
+                </div>
+                 <div class="foto__items">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/CollageDubai.jpg/1200px-CollageDubai.jpg">
+                </div>
+                <div class="foto__items">
+                    <img src="https://static.dezeen.com/uploads/2018/01/dubai-frame-2364-sq.jpg">
+                </div>
+                <div class="foto__items">
+                    <img src="https://www.timeoutdubai.com/sites/default/files/tod/styles/full_img/public/images/2018/08/12/dubai_eid.jpg?itok=DHrHAYX5">
+                </div>
+                 <div class="foto__items">
+                    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZj1NbwbpUZmRYjKaPAQHGJeJAtXW-jxZtWDUdS69fegc7Toxg7g">
+                </div>
+                 <div class="foto__items">
+                    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                </div>
+               
+               
+        </div>
+    </section>
+
+    <section class="modal__video">
+        <div class="modal__container">
+            <img id="closemodal" src="images/close_btn.png" alt="">
+             <iframe id="iframe" width="700" height="400" src="https://www.youtube.com/embed/0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="title">
+                 <img src="images/map.png" alt="">
+                 <p id="thumbtitle"></p>
+             </div>
+        </div>
+    </section>
+
+    <section class="modal__foto">
+        <div class="modal__container-foto">
+            <img id="cls" src="images/close_btn.png" alt="">
+             <img id="foto-modal" src="" alt="">
+             <div class="title-foto">
+                 <img src="images/map.png" alt="">
+                 <p id="thumbtitle-foto">Lorem ipsum dolor sit amet, consectetur.</p>
+             </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2019 PT. Kompas Cyber Media. All Rights Reserved</p>
+    </footer>
+
+    <script>
+        //change ads phb source
+        let adsPhb = document.querySelector('#phb')
+        function changeSrcPhb(){
+            if(screen.width < 769){
+                adsPhb.src = 'images/320x50.jpg'
+            }
+        }
+
+        changeSrcPhb()
+
+        let vidList = document.querySelectorAll('.video__items iframe')
+        let vidThumb = document.querySelectorAll('.video__thumb')
+        let vidModal = document.querySelector('#iframe')
+        let modalContainer = document.querySelector('.modal__video')
+        let modalMid = document.querySelector('.modal__container')
+        let thumbTitle = document.querySelector('#thumbtitle')
+
+        for(let i=0; i<vidThumb.length; i++){
+            vidThumb[i].addEventListener('click', ()=>{
+                let id = vidList[i].src.slice(30)
+
+                modalContainer.style.display = 'block'
+                let fetchTitle = async function(){
+                    let res = await fetch(` https://www.googleapis.com/youtube/v3/videos?id=${id}&key=AIzaSyDRJXGZroYkXY3NrEFOD8MV2je6QDgyhEo&part=snippet,statistics`);
+                    let data = await res.json()
+                    thumbTitle.innerHTML = data.items[0].snippet.title;
+                    vidModal.src = vidList[i].src;
+                    modalMid.style.display = 'block'
+                    //console.log(data)
+                }
+                fetchTitle()
+                
+                //console.log(id)
+            })
+        }
+
+        //modal close
+        let closebtn = document.querySelector('#closemodal')
+        closemodal.addEventListener('click', ()=>{
+            modalMid.style.display = 'none'
+            modalContainer.style.display = 'none'
+            vidModal.src = 'https://www.youtube.com/embed/0'
+        });
+
+
+
+        //modal foto
+        let photoItems = document.querySelectorAll('.foto__items')
+        let fotoSrc = document.querySelectorAll('.foto__items img')
+        let fotoModal = document.querySelector('#foto-modal')
+        let fotoContainer = document.querySelector('.modal__container-foto')
+        let fotoParent =  document.querySelector('.modal__foto')
+
+        for(let i=0; i<photoItems.length; i++){
+            photoItems[i].addEventListener('click', ()=>{
+                fotoModal.src = fotoSrc[i].src;
+                fotoContainer.style.display = 'block'
+                fotoParent.style.display = 'block'
+            })
+        };
+
+        //close modal foto
+        let close = document.querySelector('#cls')
+        cls.addEventListener('click', ()=>{
+            fotoContainer.style.display = 'none'
+            fotoParent.style.display = 'none'
+        })
+
+    </script>
+    
+</body>
+</html>
